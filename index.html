@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ec">
+    <meta name="description" content="Build good farming habits, complete practical farm tasks, and earn points and badges.">
+    <title>Fieldcraft — small steps for a healthier farm</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Fieldcraft home">
+        <span class="brand-mark" aria-hidden="true">f.</span>
+        <span>fieldcraft<span class="brand-period">.</span></span>
+      </a>
+      <nav class="phase-nav" id="phase-nav" aria-label="Farm task stages"></nav>
+      <div class="topbar-stats">
+        <span class="credit-pill" aria-live="polite"><span aria-hidden="true">✳</span> <strong id="credit-count">0</strong> points</span>
+        <button class="avatar" id="reset-progress" type="button" aria-label="Start my farm journey over" title="Start my farm journey over">R</button>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div id="storage-notice" class="storage-notice" role="status" hidden></div>
+      <div id="app"></div>
+    </main>
+
+    <footer class="site-footer">
+      <span>Fieldcraft <span id="year"></span></span>
+      <span>Small steps make resilient farms.</span>
+      <button id="export-progress" class="text-button" type="button">Save a copy of my rewards</button>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="src/app/main.js"></script>
+  </body>
+</html>
