@@ -1,7 +1,6 @@
 # Application source
 
-The project uses native JavaScript modules and has no build tool or external
-runtime dependencies.
+The project uses native JavaScript modules and has no build tool or external runtime dependencies. and this is my DS project 
 
 - `app/` renders the learning journey, binds the tools and manages progression.
 - `features/` contains the phase algorithms and lesson data.
